@@ -6,7 +6,7 @@ const mime = require('mime-types')
 const Redis = require('ioredis')
 
 
-const publisher = new Redis('rediss://default:AVNS_Js8KK2vKM_OuPY-rWrz@redis-1959255d-akshathnag06-d676.k.aivencloud.com:18287')
+const publisher = new Redis('')
 
 
 
