@@ -13,8 +13,8 @@ const publisher = new Redis('rediss://default:AVNS_Js8KK2vKM_OuPY-rWrz@redis-195
 const s3Client = new S3Client({
     region: 'ap-southeast-2',
     credentials: {
-        accessKeyId: 'AKIATCKATP5R4LPWD2ZB',
-        secretAccessKey: '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'
+        accessKeyId: '',
+        secretAccessKey: ''
     }
 }) //minio change
 
@@ -68,7 +68,7 @@ async function init() {
 
 
             const command = new PutObjectCommand({
-                Bucket: 'vercel-clone-project12345',
+                Bucket: '',
                 Key: `__outputs/${PROJECT_ID}/${file}`,
                 Body: fs.createReadStream(filePath),
                 ContentType: mime.lookup(filePath)

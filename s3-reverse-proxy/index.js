@@ -4,7 +4,7 @@ const httpProxy = require('http-proxy')
 const app = express()
 const PORT = 8000
 
-const BASE_PATH = 'https://vercel-clone-project12345.s3.ap-southeast-2.amazonaws.com/__outputs/'//minio change 
+const BASE_PATH = ''//minio change 
 
 const proxy = httpProxy.createProxy()
 

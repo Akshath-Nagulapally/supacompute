@@ -23,8 +23,8 @@ const PORT = 1000
 const ecsClient = new ECSClient({
         region: 'ap-southeast-2',
         credentials: {
-            accessKeyId: 'AKIATCKATP5R4LPWD2ZB',
-            secretAccessKey: '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'
+            accessKeyId: '',
+            secretAccessKey: ''
         }
 })
 
@@ -48,8 +48,8 @@ app.post('/project', async (req, res) => {
         networkConfiguration: {
             awsvpcConfiguration: {
                 assignPublicIp: 'ENABLED',
-                subnets: ['subnet-01e58b57a81b250e2', 'subnet-05193b14e1005110a', 'subnet-0273bb2d520987952'],
-                securityGroups: ['sg-0b3100168f96c9a80']
+                subnets: ['', '', ''],
+                securityGroups: ['']
             }
         },
         overrides: {
